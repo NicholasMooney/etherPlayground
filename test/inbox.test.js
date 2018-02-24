@@ -4,6 +4,10 @@ const Web3 = require('web3');
 const web3 = new Web3(ganache.provider());
 
 
+
+
+
+/* commenting to save off mocha tests for future example cases. Not necessary for project
 class Car{
     park(){
         return 'stopped';
@@ -20,8 +24,6 @@ beforeEach(() => {
 });
 
 describe('Car', () =>{
-    
-    
     it('can park?', () =>{
         assert.equal(car.park(), 'stopped');
     });
@@ -31,3 +33,5 @@ describe('Car', () =>{
     });
 
 });
+
+*/
