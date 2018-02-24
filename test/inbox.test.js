@@ -39,6 +39,9 @@ describe('Inbox', () =>{
         //set the new message
         await inbox.methods.setMessage("new test message").send({from: accounts[0]});
         
+        //confirm the message has changed
+        const message = await inbox.methods.message().call();
+        assert.equal(message, "new test message");
     });
     
 });
